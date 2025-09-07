@@ -105,7 +105,7 @@ nommy-employee/
 
 ### **Fase 1: Configuración Base y Autenticación** (Semana 1-2)
 
-#### 1.1 Setup Inicial
+#### 1.1 Setup Inicial ✅ COMPLETADO
 ```bash
 # Configurar proyecto Expo
 cd nommy-employee
@@ -116,11 +116,11 @@ npx expo install expo-local-authentication expo-secure-store
 npx expo install @tanstack/react-query zustand
 ```
 
-#### 1.2 Configuración de Autenticación
-- Implementar **expo-local-authentication** para biométricos
-- Configurar **expo-secure-store** para tokens
-- Migrar lógica de login desde `SignInScreen.tsx` legacy
-- Implementar patrón JWT + Refresh Token
+#### 1.2 Configuración de Autenticación ✅ COMPLETADO
+- [x] Implementar **expo-local-authentication** para biométricos
+- [x] Configurar **expo-secure-store** para tokens
+- [x] Migrar lógica de login desde `SignInScreen.tsx` legacy
+- [ ] Implementar patrón JWT + Refresh Token (usando mock authentication)
 
 #### 1.3 Estado Global Base
 ```typescript
@@ -146,12 +146,12 @@ export const useCurrentUser = () => {
 
 ### **Fase 2: Navegación y UI Base** (Semana 2-3)
 
-#### 2.1 Implementar Expo Router Navigation
-- Configurar file-based routing
-- Migrar tab navigation a `(tabs)/_layout.tsx`
-- Implementar autenticación guards
+#### 2.1 Implementar Expo Router Navigation ✅ COMPLETADO
+- [x] Configurar file-based routing
+- [x] Migrar tab navigation a `(tabs)/_layout.tsx`
+- [x] Implementar autenticación guards
 
-#### 2.2 Sistema de Theming con NativeWind
+#### 2.2 Sistema de Theming con NativeWind ⚠️ PENDIENTE
 ```bash
 npx expo install nativewind
 npx expo install tailwindcss
@@ -332,16 +332,16 @@ export const logger = {
 ## 📋 Checklist de Migración
 
 ### ✅ Preparación
-- [ ] Backup completo del proyecto legacy
+- [x] Backup completo del proyecto legacy
 - [ ] Configurar Expo Development Build
 - [ ] Configurar EAS CLI y cuenta
 - [ ] Configurar Sentry account
 
 ### ✅ Fase 1: Base
-- [ ] Configurar Expo Router navigation
-- [ ] Migrar sistema de autenticación
-- [ ] Implementar Zustand stores
-- [ ] Configurar TanStack Query
+- [x] Configurar Expo Router navigation
+- [x] Migrar sistema de autenticación
+- [x] Implementar Zustand stores
+- [x] Configurar TanStack Query
 - [ ] Setup NativeWind theming
 
 ### ✅ Fase 2: Core Features
